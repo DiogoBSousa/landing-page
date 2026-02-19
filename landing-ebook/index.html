@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Meta Tags -->
+    <title>Controle Sua Mente Antes Que Ela Te Controle - E-book | PARADOXE ABYSS</title>
+    <meta name="description" content="Domine sua mente com técnicas de neurociência e psicologia. E-book prático por PARADOXE ABYSS">
+    <meta name="keywords" content="controle mental, mindset, ansiedade, neuroplasticidade, reestruturação cognitiva">
+    <meta name="author" content="PARADOXE ABYSS">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Controle Sua Mente Antes Que Ela Te Controle - E-book | PARADOXE ABYSS">
+    <meta property="og:description" content="Domine sua mente com técnicas de neurociência e psicologia. E-book prático por PARADOXE ABYSS">
+    <meta property="og:image" content="https://paradoxe-abyss.netlify.app/capa-ebook.png">
+    <meta property="og:url" content="https://paradoxe-abyss.netlify.app">
+    <meta property="og:type" content="product">
+    <meta property="og:locale" content="pt_BR">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Controle Sua Mente Antes Que Ela Te Controle - E-book | PARADOXE ABYSS">
+    <meta name="twitter:description" content="Domine sua mente com técnicas de neurociência e psicologia. E-book prático por PARADOXE ABYSS">
+    <meta name="twitter:image" content="https://paradoxe-abyss.netlify.app/capa-ebook.png">
+    
+    <!-- Preconnect para performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://unpkg.com">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="capa-ebook.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://paradoxe-abyss.netlify.app">
+</head>
+<body class="bg-dark text-white overflow-x-hidden">
+    
+    <!-- Navbar Sticky -->
+    <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300" role="navigation" aria-label="Navegação principal">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 md:h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center space-x-2 group" aria-label="PARADOXE ABYSS - Página inicial">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-dark-red flex items-center justify-center">
+                        <span class="text-white font-black text-lg">P</span>
+                    </div>
+                    <span class="font-heading font-bold text-lg md:text-xl tracking-wider group-hover:text-primary transition-colors">PARADOXE ABYSS</span>
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link text-sm font-medium hover:text-primary transition-colors" aria-label="Ir para Home">Home</a>
+                    <a href="#beneficios" class="nav-link text-sm font-medium hover:text-primary transition-colors" aria-label="Ir para Benefícios">Benefícios</a>
+                    <a href="#depoimentos" class="nav-link text-sm font-medium hover:text-primary transition-colors" aria-label="Ir para Depoimentos">Depoimentos</a>
+                    <a href="#comprar" class="nav-link text-sm font-medium hover:text-primary transition-colors" aria-label="Ir para Comprar">Comprar</a>
+                </div>
+                
+                <!-- CTA Button Desktop -->
+                <a href="#comprar" class="hidden md:inline-flex items-center px-6 py-2.5 bg-primary hover:bg-white hover:text-dark text-white font-semibold text-sm rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg shadow-primary/30" aria-label="Comprar agora">
+                    Comprar Agora
+                </a>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-white/10 transition-colors" aria-label="Abrir menu mobile" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-dark/95 backdrop-blur-lg border-t border-white/10" role="menu">
+            <div class="px-4 py-4 space-y-3">
+                <a href="#home" class="block py-2 text-sm font-medium hover:text-primary transition-colors" role="menuitem">Home</a>
+                <a href="#beneficios" class="block py-2 text-sm font-medium hover:text-primary transition-colors" role="menuitem">Benefícios</a>
+                <a href="#depoimentos" class="block py-2 text-sm font-medium hover:text-primary transition-colors" role="menuitem">Depoimentos</a>
+                <a href="#comprar" class="block py-2 text-sm font-medium hover:text-primary transition-colors" role="menuitem">Comprar</a>
+                <a href="#comprar" class="block w-full text-center px-6 py-3 bg-primary text-white font-semibold rounded-full mt-4" role="menuitem">Comprar Agora</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+        <!-- Background Gradient -->
+        <div class="absolute inset-0 bg-gradient-to-b from-primary-dark via-dark to-black"></div>
+        
+        <!-- Decorative Elements -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-pulse-slow"></div>
+            <div class="absolute bottom-20 right-10 w-96 h-96 bg-dark-red/30 rounded-full blur-3xl animate-pulse-slow" style="animation-delay: 1s;"></div>
+            <!-- Floating wires decoration -->
+            <svg class="absolute top-1/4 left-0 w-full h-32 opacity-10" viewBox="0 0 1200 100" fill="none">
+                <path d="M0,50 Q300,0 600,50 T1200,50" stroke="currentColor" stroke-width="1" class="text-primary animate-float"/>
+                <path d="M0,70 Q300,20 600,70 T1200,70" stroke="currentColor" stroke-width="0.5" class="text-white/50 animate-float" style="animation-delay: 0.5s;"/>
+            </svg>
+        </div>
+        
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                <!-- Content -->
+                <div class="text-center lg:text-left" data-aos="fade-up" data-aos-duration="1000">
+                    <h1 class="font-heading font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-tight mb-6 animate-title-pulse">
+                        Você Está no Controle...
+                        <span class="block text-primary mt-2">Ou Sua Mente Está?</span>
+                    </h1>
+                    
+                    <div class="space-y-4 text-gray-300 text-base sm:text-lg md:text-xl leading-relaxed mb-8">
+                        <p data-aos="fade-up" data-aos-delay="100">
+                            Você já sentiu que seus pensamentos estão fora de controle? Que a ansiedade, o medo e a autossabotagem parecem tomar as rédeas da sua vida?
+                        </p>
+                        <p data-aos="fade-up" data-aos-delay="200">
+                            A boa notícia é: <strong class="text-white">você pode mudar isso.</strong>
+                        </p>
+                        <p data-aos="fade-up" data-aos-delay="300">
+                            E se eu te disser que você pode virar o jogo?
+                        </p>
+                    </div>
+                    
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8" data-aos="fade-up" data-aos-delay="400">
+                        <a href="#comprar" class="inline-flex items-center justify-center px-8 py-4 bg-primary hover:bg-white hover:text-dark text-white font-bold text-lg rounded-full transition-all duration-300 transform hover:scale-105 shadow-xl shadow-primary/40 animate-cta-pulse">
+                            Comprar Agora por R$ 15,50
+                            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <p class="text-primary font-semibold text-sm animate-pulse" data-aos="fade-up" data-aos-delay="500">
+                        Vagas Limitadas
+                    </p>
+                    
+                    <!-- Waitlist Form -->
+                    <div class="mt-8 p-6 bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10" data-aos="fade-up" data-aos-delay="600">
+                        <p class="text-sm text-gray-400 mb-4">Quer ser avisado antes do lançamento? Entre na lista de espera:</p>
+                        <form name="pre-venda" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="flex flex-col sm:flex-row gap-3">
+                            <p class="hidden">
+                                <label>Não preencha: <input name="bot-field"/></label>
+                            </p>
+                            <input type="hidden" name="form-name" value="pre-venda">
+                            <input type="email" name="email" placeholder="Seu melhor e-mail" required 
+                                class="flex-1 px-5 py-3 bg-white/10 border border-white/20 rounded-full text-white placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/50 transition-all"
+                                aria-label="Digite seu e-mail para lista de espera">
+                            <button type="submit" 
+                                class="px-6 py-3 bg-white/20 hover:bg-white/30 text-white font-semibold rounded-full transition-all duration-300 border border-white/30"
+                                aria-label="Entrar na lista de espera">
+                                Entrar na Lista
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Book Cover -->
+                <div class="flex justify-center lg:justify-end" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="200">
+                    <div class="relative">
+                        <!-- Glow effect behind book -->
+                        <div class="absolute inset-0 bg-primary/30 blur-3xl rounded-full transform scale-110 animate-pulse-slow"></div>
+                        
+                        <!-- Book Image -->
+                        <img src="capa-ebook.png" 
+                             alt="Capa do e-book Controle Sua Mente Antes Que Ela Te Controle - PARADOXE ABYSS" 
+                             class="relative w-full max-w-md lg:max-w-lg xl:max-w-xl rounded-lg shadow-2xl animate-book-float"
+                             loading="eager"
+                             width="600"
+                             height="800">
+                        
+                        <!-- Floating badge -->
+                        <div class="absolute -bottom-4 -left-4 bg-primary text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg animate-bounce-slow">
+                            84% OFF
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Apresentação Section -->
+    <section id="apresentacao" class="relative py-20 md:py-32 bg-dark">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="font-heading font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-8 leading-tight" data-aos="fade-up">
+                    Apresento o e-book <span class="text-primary">"Controle sua Mente Antes que Ela te Controle"</span>
+                </h2>
+                
+                <div class="prose prose-lg prose-invert mx-auto" data-aos="fade-up" data-aos-delay="200">
+                    <p class="text-gray-300 text-base sm:text-lg md:text-xl leading-relaxed">
+                        — um guia prático e baseado em ciência para você entender como sua mente funciona, identificar padrões autodestrutivos e reprogramar seus pensamentos para uma vida mais leve, produtiva e feliz.
+                    </p>
+                    <p class="text-gray-300 text-base sm:text-lg md:text-xl leading-relaxed mt-6">
+                        Este não é mais um livro de autoajuda cheio de promessas vazias. Aqui você encontrará técnicas validadas pela neurociência e pela psicologia cognitiva, apresentadas de forma simples e direta, para que você possa aplicar imediatamente no seu dia a dia.
+                    </p>
+                    <blockquote class="border-l-4 border-primary pl-6 my-8 italic text-xl text-gray-200" data-aos="fade-up" data-aos-delay="400">
+                        "Entre o estímulo e a resposta existe um espaço. Nesse espaço está nosso poder de escolher nossa resposta. Em nossa resposta está nosso crescimento e nossa liberdade." — Viktor Frankl
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios Section -->
+    <section id="beneficios" class="relative py-20 md:py-32 bg-gradient-to-b from-dark to-black">
+        <!-- Background decoration -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary/5 to-transparent"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="font-heading font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4" data-aos="fade-up">
+                    O que você vai <span class="text-primary">ganhar</span> ao ler este e-book?
+                </h2>
+                <p class="text-gray-400 text-lg" data-aos="fade-up" data-aos-delay="100">
+                    Técnicas práticas baseadas em ciência para transformar sua mente
+                </p>
+            </div>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                <!-- Benefício 1 -->
+                <div class="benefit-card group" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Neuroplasticidade</h3>
+                    <p class="card-text">Entenda como seu cérebro pode se reconfigurar e criar novos hábitos saudáveis</p>
+                </div>
+                
+                <!-- Benefício 2 -->
+                <div class="benefit-card group" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Respiração 4-7-8</h3>
+                    <p class="card-text">Técnica poderosa para acalmar a ansiedade em segundos</p>
+                </div>
+                
+                <!-- Benefício 3 -->
+                <div class="benefit-card group" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 14.25v2.25m3-4.5v4.5m3-6.75v6.75m3-9v9M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Reestruturação Cognitiva</h3>
+                    <p class="card-text">Aprenda a identificar e mudar pensamentos negativos automáticos</p>
+                </div>
+                
+                <!-- Benefício 4 -->
+                <div class="benefit-card group" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Journaling Terapêutico</h3>
+                    <p class="card-text">Exercícios de escrita para processar emoções e ganhar clareza</p>
+                </div>
+                
+                <!-- Benefício 5 -->
+                <div class="benefit-card group" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Plano de 30 Dias</h3>
+                    <p class="card-text">Roteiro prático para implementar mudanças duradouras</p>
+                </div>
+                
+                <!-- Benefício 6 -->
+                <div class="benefit-card group" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Bônus Exclusivos</h3>
+                    <p class="card-text">Áudio de meditação guiada + Guia de exercícios práticos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos Section -->
+    <section id="depoimentos" class="relative py-20 md:py-32 bg-dark">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-heading font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4" data-aos="fade-up">
+                    Milhares de pessoas já estão <span class="text-primary">transformando suas vidas</span>
+                </h2>
+                <p class="text-gray-400 text-lg" data-aos="fade-up" data-aos-delay="100">
+                    Veja o que dizem:
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
+                <!-- Depoimento 1 -->
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-4">
+                        <img src="perfil-rafael.png" alt="Foto de Rafael M." class="w-14 h-14 rounded-full object-cover border-2 border-primary">
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-white">Rafael M.</h4>
+                            <div class="flex text-primary">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 italic">"Depois de aplicar as técnicas deste e-book, minha ansiedade diminuiu drasticamente. Finalmente entendi como minha mente funciona!"</p>
+                </div>
+                
+                <!-- Depoimento 2 -->
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center mb-4">
+                        <img src="perfil-camila.png" alt="Foto de Camila T." class="w-14 h-14 rounded-full object-cover border-2 border-primary">
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-white">Camila T.</h4>
+                            <div class="flex text-primary">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 italic">"O plano de 30 dias mudou minha rotina completamente. Hoje consigo controlar meus pensamentos negativos de forma natural."</p>
+                </div>
+                
+                <!-- Depoimento 3 -->
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center mb-4">
+                        <img src="perfil-thiago.jpg" alt="Foto de Thiago L." class="w-14 h-14 rounded-full object-cover border-2 border-primary">
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-white">Thiago L.</h4>
+                            <div class="flex text-primary">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 italic">"Investimento que vale cada centavo. As técnicas de respiração e journaling são simplesmente transformadoras."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preço / Por que comprar Section -->
+    <section id="comprar" class="relative py-20 md:py-32 bg-gradient-to-b from-black to-primary-dark/30">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="font-heading font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4" data-aos="fade-up">
+                        Por que comprar <span class="text-primary">AGORA</span>?
+                    </h2>
+                </div>
+                
+                <!-- Price Card -->
+                <div class="price-card" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="text-center mb-8">
+                        <p class="text-gray-400 text-lg mb-2">Preço normal</p>
+                        <p class="text-2xl md:text-3xl text-gray-500 line-through">R$ 97,00</p>
+                    </div>
+                    
+                    <div class="text-center mb-8">
+                        <p class="text-primary font-semibold text-lg mb-2">Preço promocional de lançamento</p>
+                        <div class="flex items-center justify-center">
+                            <span class="text-5xl md:text-7xl font-black text-white">R$ 15,50</span>
+                        </div>
+                        <p class="text-gray-400 mt-2">apenas para os primeiros 100 compradores</p>
+                    </div>
+                    
+                    <!-- Badges -->
+                    <div class="flex flex-wrap justify-center gap-4 mb-8">
+                        <div class="badge-garantia">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                            </svg>
+                            <span>Garantia 7 Dias</span>
+                        </div>
+                        <div class="badge-seguro">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                            </svg>
+                            <span>Pagamento Seguro</span>
+                        </div>
+                    </div>
+                    
+                    <!-- CTA Button -->
+                    <div class="text-center">
+                        <a href="https://pay.kiwify.com.br/4ARxS8O" class="inline-flex items-center justify-center w-full sm:w-auto px-10 py-5 bg-primary hover:bg-white hover:text-dark text-white font-bold text-xl rounded-full transition-all duration-300 transform hover:scale-105 shadow-2xl shadow-primary/50 animate-cta-pulse" target="_blank" rel="noopener noreferrer">
+                            COMPRAR AGORA
+                            <svg class="w-6 h-6 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                            </svg>
+                        </a>
+                        <p class="text-primary font-semibold mt-4 animate-pulse">
+                            Vagas limitadas aos primeiros 100
+                        </p>
+                    </div>
+                    
+                    <!-- Garantia text -->
+                    <div class="mt-8 p-6 bg-white/5 rounded-xl border border-white/10">
+                        <p class="text-gray-300 text-center text-sm md:text-base">
+                            <strong class="text-white">Garantia incondicional de 7 dias:</strong> Se você não ficar satisfeito com o conteúdo, devolvemos 100% do seu dinheiro. Sem perguntas, sem burocracia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final Section -->
+    <section id="cta-final" class="relative py-20 md:py-32 bg-gradient-to-b from-primary-dark/30 to-dark">
+        <!-- Decorative elements -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/10 rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="font-heading font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-6 leading-tight" data-aos="fade-up">
+                    Você merece uma mente <span class="text-primary">livre</span>
+                </h2>
+                
+                <div class="space-y-4 text-gray-300 text-base sm:text-lg md:text-xl leading-relaxed mb-10" data-aos="fade-up" data-aos-delay="200">
+                    <p>
+                        Imagine acordar todos os dias com clareza mental, sem a ansiedade tomando conta dos seus pensamentos.
+                    </p>
+                    <p>
+                        Imagine ter ferramentas práticas para lidar com o estresse, a autossabotagem e os pensamentos negativos.
+                    </p>
+                    <p class="text-white font-semibold">
+                        Isso é possível. E começa com uma decisão.
+                    </p>
+                </div>
+                
+                <!-- Final CTA -->
+                <div data-aos="zoom-in" data-aos-delay="400">
+                    <a href="#" class="inline-flex items-center justify-center w-full sm:w-auto px-12 py-6 bg-primary hover:bg-white hover:text-dark text-white font-black text-xl sm:text-2xl rounded-full transition-all duration-300 transform hover:scale-105 shadow-2xl shadow-primary/50 animate-cta-pulse">
+                        COMPRAR AGORA POR R$ 15,50
+                    </a>
+                    <p class="text-primary font-bold text-lg mt-6 animate-pulse">
+                        Vagas limitadas aos primeiros 100
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="relative py-12 bg-black border-t border-white/10">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-dark-red flex items-center justify-center">
+                        <span class="text-white font-black text-lg">P</span>
+                    </div>
+                    <span class="font-heading font-bold text-lg tracking-wider">PARADOXE ABYSS</span>
+                </div>
+                
+                <!-- Social Links -->
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="YouTube">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="TikTok">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                    </a>
+                </div>
+                
+                <!-- Links -->
+                <div class="flex items-center space-x-6 text-sm">
+                    <a href="#" class="text-gray-400 hover:text-primary transition-colors">Política de Privacidade</a>
+                    <a href="#" class="text-gray-400 hover:text-primary transition-colors">Termos de Uso</a>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="mt-8 pt-8 border-t border-white/10 text-center">
+                <p class="text-gray-500 text-sm">
+                    © 2026 PARADOXE ABYSS – Todos os direitos reservados
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 w-12 h-12 bg-primary hover:bg-white hover:text-dark text-white rounded-full shadow-lg flex items-center justify-center transition-all duration-300 transform translate-y-20 opacity-0 z-50" aria-label="Voltar ao topo">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+        </svg>
+    </button>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
